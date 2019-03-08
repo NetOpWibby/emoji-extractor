@@ -6,7 +6,7 @@ This is a small ruby script that extracts the Apple Color Emoji PNG Symbols from
 
 The extracted assets will be placed in a subfolder of one called "images", for each resolution in their own folder. File system structure is as follows:
 
-```
+```txt
 .
 ├── README.md
 ├── emoji_extractor.rb
@@ -27,7 +27,7 @@ The extracted assets will be placed in a subfolder of one called "images", for e
 
 Make sure the font exists. The response should look like the second line:
 
-```
+```bash
 $ file /System/Library/Fonts/Apple\ Color\ Emoji.ttc
 /System/Library/Fonts/Apple Color Emoji.ttc: TrueType font collection data, 2.0, 2 fonts, at 0x20 TrueType Font data, 16 tables, 1st "OS/2"
 ```
