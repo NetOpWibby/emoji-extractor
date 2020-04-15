@@ -1,5 +1,4 @@
 # encoding: US-ASCII
-# forked from https://github.com/LukeLR/emoji-extractor
 
 require "stringio"
 require "fileutils"
@@ -11,7 +10,7 @@ def extract_chunk(input, output)
   data = length>0 ? input.read(length) : ""
   crc = input.read(4)
   return nil if length<0 || !(('A'..'z')===type[0,1])
-  #return nil if validate_crc(type+data, crc)
+
   output.write lenword
   output.write type
   output.write data

@@ -27,7 +27,7 @@ The extracted assets will be placed in a subfolder of one called "images", for e
 
 Make sure the font exists. The response should look like the second line:
 
-```bash
+```sh
 $ file /System/Library/Fonts/Apple\ Color\ Emoji.ttc
 /System/Library/Fonts/Apple Color Emoji.ttc: TrueType font collection data, 2.0, 2 fonts, at 0x20 TrueType Font data, 16 tables, 1st "OS/2"
 ```
@@ -36,6 +36,12 @@ $ file /System/Library/Fonts/Apple\ Color\ Emoji.ttc
 
 ## Usage
 
-```
+```sh
 $ ruby emoji_extractor.rb
 ```
+
+
+
+## Thanks
+
+- [LukeLR](https://github.com/LukeLR/emoji-extractor)'s fork
